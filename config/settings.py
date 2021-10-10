@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-n2-)zpt(b6yb!gu_hgy&*$)om7%b+tl#hon9ax_9p58dn4!c+$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Own apps
     'account',
+    'images.apps.ImagesConfig',
     # Third party apps
-    'social_django'
+    'social_django',
 ]
 
 MIDDLEWARE = [
